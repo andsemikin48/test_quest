@@ -21,7 +21,7 @@ def read_files(files):
             except FileNotFoundError:
                 print('Ошибка чтения файлов: не найден')
             except Exception as err:
-                print('Ошибка при чтении файлов: что-то пошло не так')
+                print(err, 'Ошибка при чтении файлов: что-то пошло не так')
 
     return data
 
